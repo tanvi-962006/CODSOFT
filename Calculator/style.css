@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color:white;
+
+}
+.bg{
+    background-color: gray;
+    width: 100vw;
+    height: 80vh;
+    
+}
+.calculator{
+    justify-content: center;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 20px;
+    width: 20vw;
+    height:580px;
+    margin:10vh auto;
+}
+.calc-heading{
+    text-align: center;
+    padding:40px 40px 20px 40px;
+}
+.calc-display{
+    display: flex;
+    justify-content: center;
+    margin: 2px auto;
+}
+.calc-screen{
+    background-color: rgb(52, 52, 52);
+    border:none;
+    border-radius: 10px;
+    padding: 0px 5px;
+    font-size: 50px;
+    width:90%;
+    cursor:text;
+    text-align: right;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.calc-button{
+    margin:20px;
+}
+.btn{
+    height: 350px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-content: center;
+    text-align: center;
+    column-gap:10px;
+}
+.btn button{
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+    border-radius: 40px;
+}
+.btn button:nth-child(1){
+    background-color: rgb(142, 142, 142);
+}
+.btn button:nth-child(1):hover{
+    background-color: rgb(116, 115, 115);
+}
+.btn button:nth-child(4n){
+    background-color: rgb(255, 165, 0);
+}
+.btn button:nth-child(4n):hover{
+    background-color: rgb(255, 140, 0);
+}
+.btn button:nth-child(19){
+    background-color: rgb(255, 165, 0);
+}
+.btn button:nth-child(19):hover{
+    background-color: rgb(255, 140, 0);
+}
+.btn button:hover{
+    background-color: rgb(52, 52, 52);
+}
+.item{
+    border:1px solid black;
+    border-radius: 5px;
+    height: 57px;
+    width: 57px;
+    margin:5px;
+    font-size:25px;
+    font-weight:400;
+    
+}
+.item1{
+    grid-column:span 2;
+    width: 120px;
+}
+.invert{
+    color:black;
+    
+}
+@media(max-width:1500px) {
+    .red{
+    width: 350px;
+
+}}
+@media (max-width: 500px) {
+    .red{
+        width: 90%;
+        height:auto;
+        padding-bottom: 20px;
+    }
+    .cc {
+        font-size: 35px; 
+    }
+
+    .btn {
+        height: auto;
+        column-gap: 5px;
+    }
+
+    .item {
+        width: 100%; 
+        margin: 5px 0;
+    }
+
+    .item1 {
+        width: 100%; 
+    }
+}
